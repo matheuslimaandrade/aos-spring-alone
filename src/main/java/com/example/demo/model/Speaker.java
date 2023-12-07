@@ -1,16 +1,12 @@
 package com.example.demo.model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.Data;
 
 @Data
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class Speaker extends Participant {
     private String expertise;
-
-    @OneToOne
-    @JoinColumn(name = "participant_id")
-    private Participant participant;
 }
