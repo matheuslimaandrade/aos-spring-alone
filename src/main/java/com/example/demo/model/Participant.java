@@ -3,7 +3,6 @@ package com.example.demo.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-
 @Data
 @Entity
 public class Participant {
@@ -17,4 +16,7 @@ public class Participant {
     @ManyToOne
     @JoinColumn(name = "conference_id")
     private Conference conference;
+
+    @OneToOne(mappedBy = "participant", cascade = CascadeType.ALL, optional = false)
+    private Speaker speaker;
 }

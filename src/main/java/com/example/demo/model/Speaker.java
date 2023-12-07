@@ -1,16 +1,16 @@
 package com.example.demo.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import lombok.Data;
-
 
 @Data
 @Entity
-@PrimaryKeyJoinColumn(name = "id")
 public class Speaker extends Participant {
     private String expertise;
 
-    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    @OneToOne
     @JoinColumn(name = "participant_id")
     private Participant participant;
 }
