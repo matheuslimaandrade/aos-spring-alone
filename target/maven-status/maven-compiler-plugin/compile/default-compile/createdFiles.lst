@@ -1,0 +1,13 @@
+com\example\demo\DemoApplication.class
+com\example\demo\service\ConferenceService.class
+com\example\demo\controller\ConferenceController.class
+com\example\demo\model\Participant.class
+com\example\demo\service\ParticipantService.class
+com\example\demo\model\Speaker.class
+com\example\demo\repository\ConferenceRepository.class
+com\example\demo\controller\SpeakerController.class
+com\example\demo\repository\ParticipantRepository.class
+com\example\demo\model\Conference.class
+com\example\demo\controller\ParticipantController.class
+com\example\demo\service\SpeakerService.class
+com\example\demo\repository\SpeakerRepository.class
